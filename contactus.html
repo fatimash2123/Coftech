@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        span {
+            display: block;
+            color: rgb(221, 40, 40);
+        }
+
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .heading {
+            line-height: 20px;
+            text-align: center;
+            width: 100%;
+            margin: 5px;
+            font-weight: bolder;
+            font-size: 30px;
+
+        }
+
+        .allContent {
+            width: 100%;
+            height: 490px;
+            border: 2px solid black;
+            margin: 50px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-image: linear-gradient(45deg, rgba(161, 167, 169, 0.5) 50%, rgba(190, 225, 236, 0.5) 50%), url("images/contactBg.jpg");
+
+
+        }
+
+        .information h3 {
+            font-size: 25px;
+            font-weight: bolder;
+            text-decoration: underline;
+            color: white;
+
+        }
+
+        .information p {
+            font-size: 12px;
+            color: white;
+        }
+
+        .sendingForm {
+            background-color: rgba(161, 167, 169, 1);
+            color: white;
+        }
+
+        .sendingForm h2 {
+            font-size: 25px;
+            font-weight: bolder;
+            color: white;
+            text-decoration: overline underline;
+            margin: 8px;
+        }
+
+        .sendingForm label {
+            font-size: 14px;
+            color: white;
+        }
+
+        .sendingForm input,
+        textarea {
+
+            color: black;
+        }
+
+        .button {
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 40px;
+            width: 130px;
+            height: 30px;
+
+        }
+
+
+        li {
+            margin: 0px;
+            padding: 0px;
+            width: 130px;
+        }
+
+
+        .navigationItem {
+            margin-top: 15px;
+            margin-bottom: 10px;
+
+            width: 10vw;
+
+
+            margin-left: -85px;
+            text-overflow: ellipsis;
+
+        }
+
+        .navigationItemContainer {
+
+            text-align: center;
+            align-items: center;
+            margin-left: 20vw;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            
+        }
+
+        .headingnavbar {
+            font-size: 30px;
+            margin-top: -20px;
+            margin-left: -10px;
+            line-height: 40px;
+            text-align: right;
+        }
+
+        .dropdownList {
+            width: 180px;
+            font-size: 12px;
+            border: 2px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+
+        <a class="navbar-brand mb-0 h1 heading" href="index.html">
+
+            IT Store
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  navigationItemContainer">
+                <li class="nav-item active">
+                    <a class="nav-link navigationItem" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="dropdown-toggle nav-link navigationItem" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+
+                    <div class="dropdown-menu dropdownList" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="categoryTesting.html">Testing</a>
+                        <a class="dropdown-item" href="category.html">Web Portal</a>
+                        <a class="dropdown-item" href="categoryInternetOfThings.html">Internet of Things</a>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigationItem" href="blogCategories.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigationItem" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigationItem" href="aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigationItem" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-sm-12 heading">Contact Us</h1>
+        </div>
+        <div class="row allContent">
+            <div class="col-sm-6 information bg-secondary">
+                <div>
+                    <h3>Address</h3>
+                    <p>BB 325 st#30 I-10 Islamabad</p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>0321-6782300</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>fatimaabc11@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 sendingForm bg-dark">
+                <form>
+                    <h2>Send Message</h2>
+                    <label>Full Name<br>
+                        <input type="text" placeholder="e.g Fatima Shahzad" required>
+                        <span id="UserText"></span>
+                    </label>
+                    <br>
+                    <label>Email<br>
+                        <input type="email" placeholder="e.g abc@gmail.com" required>
+                        <span id="UserEmails"></span>
+                    </label>
+                    <br>
+                    <label>Type Your Message<br>
+                        <textarea placeholder="e.g Your Message here......" required></textarea>
+                        <span id="Comments"></span>
+                    </label>
+                    <br>
+
+                    <input type="submit" value="Submit" class="button btn btn-light btn-outline-secondary">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('input[type=submit]').click(function () {
+        var username = $("input[type=text]").val();
+        const pattern = /^[A-Za-z]{3,15} [A-Za-z]{3,15}$/
+        if (!pattern.test(username)) {
+            $('#UserText').text("**Username is not correct");
+        }
+        else {
+
+            $('#UserText').text("");
+        }
+
+
+        var emailcheck = $("input[type=email]").val();
+        const emailPatt = /^[A-Za-z0-9_#$%]+@[a-z]{3,15}\.[a-z]{2,15}$/;
+        if (!emailPatt.test(emailcheck)) {
+            $("#UserEmails").text("**Your Email is not correct");
+        }
+        else { $("#UserEmails").text("") };
+
+
+
+        var comment = $("textarea").val()
+        if (comment == "") {
+            $("#Comments").text("**Write the Comment")
+        }
+        else {
+            $("#Comments").text("")
+        }
+    })
+</script>
+
+</html>

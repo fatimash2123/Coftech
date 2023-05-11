@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/blackGray.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 30px;
+            color: rgb(199, 194, 194);
+        }
+
+
+        .row img {
+            width: 7;
+            height: 150px;
+            margin: 20px 0px;
+        }
+
+        .ratings {
+            line-height: 150px;
+        }
+
+        .ratings h2 {
+            margin-top: 40px;
+            font-weight: bolder;
+
+        }
+
+        .ratings div {
+            margin-top: -50px;
+        }
+
+        .productDescription {
+            margin: 10px;
+            font-size: 12px;
+            border: 2px solid white;
+        }
+
+        .pros,
+        .cons p {
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+
+        .cons h2 {
+            margin-top: 40px;
+            font-weight: bolder;
+
+        }
+
+        .pros h2 {
+            margin-top: 40px;
+            font-weight: bolder;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: underline overline;
+        }
+
+        .checked {
+            color: yellow;
+        }
+
+
+
+
+        /* 
+        hk; */
+        section section {
+            background-image: url("images/whitebg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 30px;
+            color: black;
+        }
+
+        .row img {
+            width: 7;
+            height: 150px;
+            margin: 20px 0px;
+        }
+
+        .ratings {
+            line-height: 150px;
+        }
+
+        .ratings h2 {
+            margin-top: 40px;
+            font-weight: bolder;
+
+        }
+
+        .ratings div {
+            margin-top: -50px;
+        }
+
+        .productDescription {
+            margin: 10px;
+            font-size: 12px;
+            border: 2px solid gray;
+        }
+
+        p {
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-weight: bolder;
+
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .usbrating {
+            margin-bottom: 5px;
+        }
+
+        #buybtn {
+            height: 50px;
+            align-self: center;
+            font-size: 16px;
+            font-weight: bolder;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            box-sizing: border-box;
+
+        }
+
+
+        .navigationItem {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            width: 10vw;
+
+
+            margin-left: 5px;
+            text-overflow: ellipsis;
+
+        }
+
+        .navigationItemContainer {
+
+            text-align: center;
+            align-items: center;
+            margin-left: 20vw;
+            font-size: 14px;
+            text-overflow: ellipsis;
+        }
+
+        .heading {
+            font-size: 30px;
+            margin-top: -20px;
+            margin-left: -10px;
+            line-height: 40px;
+            text-align: right;
+        }
+
+        .dropdownList {
+            width: 180px;
+            font-size: 12px;
+            border: 2px solid black
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+
+        <a class="navbar-brand mb-0 h1 heading" href="index.html">
+    
+          IT Store
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  navigationItemContainer">
+            <li class="nav-item active">
+              <a class="nav-link navigationItem" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+    
+            <li class="nav-item dropdown">
+    
+              <a class="dropdown-toggle nav-link navigationItem" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+    
+              <div class="dropdown-menu dropdownList" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="categoryTesting.html">Testing</a>
+                <a class="dropdown-item" href="category.html">Web Portal</a>
+                <a class="dropdown-item" href="categoryInternetOfThings.html">Internet of Things</a>
+              </div>
+    
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigationItem" href="blogCategories.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigationItem" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigationItem" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigationItem" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+    
+        </div>
+    
+      </nav>
+
+    <h1>Testing Products</h1>
+
+    <section class="container categoryProducts">
+        <div class="row">
+            <img class="col-md-3" src="images/categoryProducts/tst5.png">
+            <div class="col-md-5 ratings flex d-flex flex-column  justify-content-end">
+                <h2>Testlio</h2>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary col-md-2 btn btn-dark btn-outline-secondary" id="buybtn"
+                data-toggle="modal" data-target="#exampleModalLong1">
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Testlio
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container categoryProducts">
+                                <div class="row introduction ">
+                                    <img class="col-md-3" src="images/categoryProducts/tst5.png">
+                                    <div class="col-md-5 ratings">
+                                        <h2>Testlio</h2>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <button class="col-md-2 btn btn-dark btn-outline-secondary" id="buybtn">Buy
+                                        Now</button>
+                                </div>
+                                <p class="row productDescription">
+                                    Testlio provides managed app testing. The vendor states that with their robust
+                                    client services, a global network of expert testers, and a comprehensive software
+                                    platform, they provide a suite of burstable, flexible, and on-demand testing
+                                    solutions: end-to-end, usability, localization, functional.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 pros">
+                                        <h2>Pros</h2>
+                                        <i class="	fa fa-plus-square"> </i>
+                                        <p>It very well provide 360 degree view of customers. It consolidate data
+                                            points.
+                                        </p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>End user personalization</p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>Website Management</p>
+
+                                    </div>
+                                    <div class="col-md-6 cons">
+                                        <h2>Cons</h2>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>They should have provided Templates for certain fixed types of use cases.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p> Jahia dev tools are not production-ready resources.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>Not possible to reverse a mistake</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="row ">
+                                    <div class="col-md-6 features">
+                                        <h2>Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Content creation and editing</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Digital Asset Management (DAM)
+                                        </p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Taxonomy management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Pre-built, customizable page templates and themes</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Multi-channel content delivery</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Language management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Validation Workflows</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Headless CMS – Content & Media Manager (Content API, GraphQL)</p>
+                                    </div>
+                                    <div class="col-md-6 features">
+                                        <h2 style="visibility: hidden;">Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Traditional CMS</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Portal framework</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Role based content</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>250+ out-of-the-box connectors</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Personalization management UI</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>A/B testing and optimization</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>built-in analytics and reporting</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Form generator</p>
+
+                                    </div>
+                                </div>
+
+                                <h2>Offerings</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free Trial</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free/Freemium Version</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Premium Consulting / Integration Services</p>
+                                    </div>
+
+                                </div>
+
+
+                                <h2>What is Jahia Solution Group for?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Jahia Solutions Group aims to make digital experiences simpler. Built on a
+                                            cloud-based platform,
+                                            Jahia helps organizations leverage their content and customer data to fully
+                                            engage with their
+                                            customers. Jahia integrates into existing technology stacks and can be
+                                            customized to meet each
+                                            organization’s specific business needs and challenges.
+                                            Founded in 2002 and headquartered in Switzerland, Jahia has offices in
+                                            Boston,
+                                            Toronto and Paris.
+                                            The vendor states Jahia’s customer community includes hundreds of global
+                                            brands
+                                            and organizations,
+                                            including Ben & Jerry’s, Nationwide, NASA and General Motors.</p>
+                                    </div>
+                                </div>
+
+                                <h2>What is Jahia Digital Experience Platform's best feature?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Reviewers rate Support Rating highest, with a score of 8.2.</p>
+                                    </div>
+                                </div>
+
+
+
+                                <h2>Who uses Jahia Digital Experience Platform?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>The most common users of Jahia Digital Experience Platform are from
+                                            Enterprises
+                                            (1,001+ employees)
+                                            and the Information Technology & Services industry.</p>
+                                    </div>
+                                </div>
+
+                                <h2>REVIEWS AND RATINGS</h2>
+                                <div class="row features">
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Likelihood to Renew</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa- checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Usability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Availability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Support Rating</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="row productDescription">
+            Testlio provides managed app testing. The vendor states that with their robust client services, a global
+            network of expert testers, and a comprehensive software platform, they provide a suite of burstable,
+            flexible, and on-demand testing solutions: end-to-end, usability, localization.
+        </p>
+        <div class="row prosandcons">
+            <div class="col-md-6 pros">
+                <h2>Pros</h2>
+                <i class="	fa fa-plus-square"> </i>
+                <p>It very well provide 360 degree view of customers. It consolidate data points.</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>End user personalization</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>Website Management</p>
+
+            </div>
+            <div class="col-md-6 cons">
+                <h2>Cons</h2>
+                <i class="fa fa-minus-square"></i>
+                <p>They should have provided Templates for certain fixed types of use cases.</p>
+                <i class="fa fa-minus-square"></i>
+                <p> Jahia dev tools are not production-ready resources.</p>
+                <i class="fa fa-minus-square"></i>
+                <p>Not possible to reverse a mistake</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="container categoryProducts">
+        <div class="row">
+            <img class="col-md-3" src="images/categoryProducts/tst2.png">
+            <div class="col-md-5 ratings">
+                <h2>
+                    Centercode</h2>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary col-md-2 btn btn-dark btn-outline-secondary" id="buybtn"
+                data-toggle="modal" data-target="#exampleModalLong">
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Centercode
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container categoryProducts">
+                                <div class="row introduction ">
+                                    <img class="col-md-3" src="images/categoryProducts/tst2.png">
+                                    <div class="col-md-5 ratings">
+                                        <h2>Centercode</h2>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <button class="col-md-2 btn btn-dark btn-outline-secondary" id="buybtn">Buy
+                                        Now</button>
+                                </div>
+                                <p class="row productDescription">
+                                    Centercode Connect is a hosted software platform that provides all of the tools needed to run a beta program: recruiting, NDA management, product distribution, surveys, bug reports, forums, reporting, and more.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 pros">
+                                        <h2>Pros</h2>
+                                        <i class="	fa fa-plus-square"> </i>
+                                        <p>It very well provide 360 degree view of customers. It consolidate data
+                                            points.
+                                        </p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>End user personalization</p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>Website Management</p>
+
+                                    </div>
+                                    <div class="col-md-6 cons">
+                                        <h2>Cons</h2>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>They should have provided Templates for certain fixed types of use cases.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p> Jahia dev tools are not production-ready resources.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>Not possible to reverse a mistake</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="row ">
+                                    <div class="col-md-6 features">
+                                        <h2>Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Content creation and editing</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Digital Asset Management (DAM)
+                                        </p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Taxonomy management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Pre-built, customizable page templates and themes</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Multi-channel content delivery</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Language management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Validation Workflows</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Headless CMS – Content & Media Manager (Content API, GraphQL)</p>
+                                    </div>
+                                    <div class="col-md-6 features">
+                                        <h2 style="visibility: hidden;">Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Traditional CMS</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Portal framework</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Role based content</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>250+ out-of-the-box connectors</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Personalization management UI</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>A/B testing and optimization</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>built-in analytics and reporting</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Form generator</p>
+
+                                    </div>
+                                </div>
+
+                                <h2>Offerings</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free Trial</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free/Freemium Version</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Premium Consulting / Integration Services</p>
+                                    </div>
+
+                                </div>
+
+
+                                <h2>What is Jahia Solution Group for?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Jahia Solutions Group aims to make digital experiences simpler. Built on a
+                                            cloud-based platform,
+                                            Jahia helps organizations leverage their content and customer data to fully
+                                            engage with their
+                                            customers. Jahia integrates into existing technology stacks and can be
+                                            customized to meet each
+                                            organization’s specific business needs and challenges.
+                                            Founded in 2002 and headquartered in Switzerland, Jahia has offices in
+                                            Boston,
+                                            Toronto and Paris.
+                                            The vendor states Jahia’s customer community includes hundreds of global
+                                            brands
+                                            and organizations,
+                                            including Ben & Jerry’s, Nationwide, NASA and General Motors.</p>
+                                    </div>
+                                </div>
+
+                                <h2>What is Jahia Digital Experience Platform's best feature?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Reviewers rate Support Rating highest, with a score of 8.2.</p>
+                                    </div>
+                                </div>
+
+
+
+                                <h2>Who uses Jahia Digital Experience Platform?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>The most common users of Jahia Digital Experience Platform are from
+                                            Enterprises
+                                            (1,001+ employees)
+                                            and the Information Technology & Services industry.</p>
+                                    </div>
+                                </div>
+
+                                <h2>REVIEWS AND RATINGS</h2>
+                                <div class="row features">
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Likelihood to Renew</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa- checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Usability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Availability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Support Rating</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="row productDescription">
+            Centercode Connect is a hosted software platform that provides all of the tools needed to run a beta
+            program: recruiting, NDA management, product distribution, surveys, bug reports, forums, reporting, and
+            more.</p>
+        <div class="row">
+            <div class="col-md-6 pros">
+                <h2>Pros</h2>
+                <i class="	fa fa-plus-square"> </i>
+                <p>Organization and tools adaptable to multiple needs.</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>Different boards for every projects in an unique platform</p>
+
+
+            </div>
+            <div class="col-md-6 cons">
+                <h2>Cons</h2>
+                <i class="fa fa-minus-square"></i>
+                <p>The ability to make private chats during meetings.</p>
+                <i class="fa fa-minus-square"></i>
+                <p> development of an Android app (at the moment available only on the Apple store)</p>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="container categoryProducts">
+        <div class="row">
+            <img class="col-md-3" src="images/categoryProducts/tst3.png">
+            <div class="col-md-5 ratings">
+                <h2>
+                    Digivante</h2>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary col-md-2 btn btn-dark btn-outline-secondary" id="buybtn"
+                data-toggle="modal" data-target="#exampleModalLong3">
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Digivante
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container categoryProducts">
+                                <div class="row introduction ">
+                                    <img class="col-md-3" src="images/categoryProducts/tst3.png">
+                                    <div class="col-md-5 ratings">
+                                        <h2>Digivante
+                                        </h2>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <button class="col-md-2 btn btn-dark btn-outline-secondary" id="buybtn">Buy
+                                        Now</button>
+                                </div>
+                                <p class="row productDescription">
+                                    Digivante is a dedicated real-world website and app testing resource to complement increasingly agile deployment strategies. They offer solutions and consultancy services that aim to bring professional testing insight to everyday business thinking.
+
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 pros">
+                                        <h2>Pros</h2>
+                                        <i class="	fa fa-plus-square"> </i>
+                                        <p>It very well provide 360 degree view of customers. It consolidate data
+                                            points.
+                                        </p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>End user personalization</p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>Website Management</p>
+
+                                    </div>
+                                    <div class="col-md-6 cons">
+                                        <h2>Cons</h2>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>They should have provided Templates for certain fixed types of use cases.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p> Jahia dev tools are not production-ready resources.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>Not possible to reverse a mistake</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="row ">
+                                    <div class="col-md-6 features">
+                                        <h2>Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Content creation and editing</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Digital Asset Management (DAM)
+                                        </p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Taxonomy management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Pre-built, customizable page templates and themes</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Multi-channel content delivery</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Language management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Validation Workflows</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Headless CMS – Content & Media Manager (Content API, GraphQL)</p>
+                                    </div>
+                                    <div class="col-md-6 features">
+                                        <h2 style="visibility: hidden;">Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Traditional CMS</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Portal framework</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Role based content</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>250+ out-of-the-box connectors</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Personalization management UI</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>A/B testing and optimization</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>built-in analytics and reporting</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Form generator</p>
+
+                                    </div>
+                                </div>
+
+                                <h2>Offerings</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free Trial</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free/Freemium Version</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Premium Consulting / Integration Services</p>
+                                    </div>
+
+                                </div>
+
+
+                                <h2>What is Jahia Solution Group for?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Jahia Solutions Group aims to make digital experiences simpler. Built on a
+                                            cloud-based platform,
+                                            Jahia helps organizations leverage their content and customer data to fully
+                                            engage with their
+                                            customers. Jahia integrates into existing technology stacks and can be
+                                            customized to meet each
+                                            organization’s specific business needs and challenges.
+                                            Founded in 2002 and headquartered in Switzerland, Jahia has offices in
+                                            Boston,
+                                            Toronto and Paris.
+                                            The vendor states Jahia’s customer community includes hundreds of global
+                                            brands
+                                            and organizations,
+                                            including Ben & Jerry’s, Nationwide, NASA and General Motors.</p>
+                                    </div>
+                                </div>
+
+                                <h2>What is Jahia Digital Experience Platform's best feature?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Reviewers rate Support Rating highest, with a score of 8.2.</p>
+                                    </div>
+                                </div>
+
+
+
+                                <h2>Who uses Jahia Digital Experience Platform?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>The most common users of Jahia Digital Experience Platform are from
+                                            Enterprises
+                                            (1,001+ employees)
+                                            and the Information Technology & Services industry.</p>
+                                    </div>
+                                </div>
+
+                                <h2>REVIEWS AND RATINGS</h2>
+                                <div class="row features">
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Likelihood to Renew</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa- checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Usability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Availability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Support Rating</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="row productDescription">
+            Digivante is a dedicated real-world website and app testing resource to complement increasingly agile
+            deployment strategies. They offer solutions and consultancy services that aim to bring professional testing
+            insight to everyday business thinking.</p>
+        <div class="row">
+            <div class="col-md-6 pros">
+                <h2>Pros</h2>
+                <i class="	fa fa-plus-square"> </i>
+                <p>Email-like correspondence.</p> <i class="	fa fa-plus-square"></i>
+                <p>Communicates effectively with patients</p>
+
+            </div>
+            <div class="col-md-6 cons">
+                <h2>Cons</h2>
+                <i class="fa fa-minus-square"></i>
+                <p>Slow communication form for private messaging, could add a live chat feature option.</p>
+                <i class="fa fa-minus-square"></i>
+                <p>Can be complicated for some users, so does require some explanation</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container categoryProducts">
+        <div class="row">
+            <img class="col-md-3" src="images/categoryProducts/tst4.png">
+            <div class="col-md-5 ratings">
+                <h2>
+                    AutomationHQ</h2>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary col-md-2 btn btn-dark btn-outline-secondary" id="buybtn"
+                data-toggle="modal" data-target="#exampleModalLong4">
+                View Details
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">AutomationHQ
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container categoryProducts">
+                                <div class="row introduction ">
+                                    <img class="col-md-3" src="images/categoryProducts/tst4.png">
+                                    <div class="col-md-5 ratings">
+                                        <h2>AutomationHQ</h2>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <button class="col-md-2 btn btn-dark btn-outline-secondary" id="buybtn">Buy
+                                        Now</button>
+                                </div>
+                                <p class="row productDescription">
+                                    AutomationHQ™ (AHQ) is a complete TAAS (Test Automation As Service) solution. Its NLP driven, cloud-based No-Code test automation platform is presented as ideal for agile delivery team. Any one in agile team can develop In-Sprint test automation in plain English with AHQ. 
+
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 pros">
+                                        <h2>Pros</h2>
+                                        <i class="	fa fa-plus-square"> </i>
+                                        <p>It very well provide 360 degree view of customers. It consolidate data
+                                            points.
+                                        </p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>End user personalization</p>
+                                        <i class="	fa fa-plus-square"></i>
+                                        <p>Website Management</p>
+
+                                    </div>
+                                    <div class="col-md-6 cons">
+                                        <h2>Cons</h2>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>They should have provided Templates for certain fixed types of use cases.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p> Jahia dev tools are not production-ready resources.</p>
+                                        <i class="fa fa-minus-square"></i>
+                                        <p>Not possible to reverse a mistake</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="row ">
+                                    <div class="col-md-6 features">
+                                        <h2>Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Content creation and editing</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Digital Asset Management (DAM)
+                                        </p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Taxonomy management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Pre-built, customizable page templates and themes</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Multi-channel content delivery</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Language management</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Validation Workflows</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Headless CMS – Content & Media Manager (Content API, GraphQL)</p>
+                                    </div>
+                                    <div class="col-md-6 features">
+                                        <h2 style="visibility: hidden;">Features</h2>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Traditional CMS</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Portal framework</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Role based content</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>250+ out-of-the-box connectors</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Personalization management UI</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>A/B testing and optimization</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>built-in analytics and reporting</p>
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Form generator</p>
+
+                                    </div>
+                                </div>
+
+                                <h2>Offerings</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free Trial</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Free/Freemium Version</p>
+
+                                        <i class="fa fa-check-circle"></i>
+                                        <p>Premium Consulting / Integration Services</p>
+                                    </div>
+
+                                </div>
+
+
+                                <h2>What is Jahia Solution Group for?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Jahia Solutions Group aims to make digital experiences simpler. Built on a
+                                            cloud-based platform,
+                                            Jahia helps organizations leverage their content and customer data to fully
+                                            engage with their
+                                            customers. Jahia integrates into existing technology stacks and can be
+                                            customized to meet each
+                                            organization’s specific business needs and challenges.
+                                            Founded in 2002 and headquartered in Switzerland, Jahia has offices in
+                                            Boston,
+                                            Toronto and Paris.
+                                            The vendor states Jahia’s customer community includes hundreds of global
+                                            brands
+                                            and organizations,
+                                            including Ben & Jerry’s, Nationwide, NASA and General Motors.</p>
+                                    </div>
+                                </div>
+
+                                <h2>What is Jahia Digital Experience Platform's best feature?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>Reviewers rate Support Rating highest, with a score of 8.2.</p>
+                                    </div>
+                                </div>
+
+
+
+                                <h2>Who uses Jahia Digital Experience Platform?</h2>
+                                <div class="row features">
+                                    <div class="col-md-12">
+                                        <p>The most common users of Jahia Digital Experience Platform are from
+                                            Enterprises
+                                            (1,001+ employees)
+                                            and the Information Technology & Services industry.</p>
+                                    </div>
+                                </div>
+
+                                <h2>REVIEWS AND RATINGS</h2>
+                                <div class="row features">
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Likelihood to Renew</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa- checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Usability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Availability</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 usbrating">
+                                        <h3>Support Rating</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="row productDescription">
+            AutomationHQ™ (AHQ) is a complete TAAS (Test Automation As Service) solution. Its NLP driven, cloud-based
+            No-Code test automation platform is presented as ideal for agile delivery team. Any one in agile team can
+            develop In-Sprint test automation in plain English with AHQ. </p>
+        <div class="row">
+            <div class="col-md-6 pros">
+                <h2>Pros</h2>
+                <i class="	fa fa-plus-square"> </i>
+                <p>Open API allows for integrations and custom development work so that you can enhance the
+                    out-of-the-box features.</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>Flexible back-end system administration and design elements that allow you to create the user
+                    experience that makes sense for your community and use cases</p>
+                <i class="	fa fa-plus-square"></i>
+                <p> Strong discussion forum functionality with multi-level threading</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>Ability to create an online community that has public-facing groups and content as well as
+                    member-only, private, and secret groups.</p>
+                <i class="	fa fa-plus-square"></i>
+                <p> Search is strong</p>
+            </div>
+
+            <div class="col-md-6 cons">
+                <h2>Cons</h2>
+                <i class="	fa fa-plus-square"> </i>
+                <p>The design of some of the widgets could be improved and made consistent across application types.</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>You can do anything you want with the Verint Community platform if you have a developer or a
+                    development team -- if you don't, it can be costly to enhance the out-of-the-box features to get the
+                    experience you are trying to build for your members.</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>The Automation Rules that have been enhanced recently hold a lot of promise, but need to be made
+                    easier for a non-programmer. Some standard automation rules need to be created in order to support
+                    driving desired member behaviors.</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        section {
+            background-image: url("images/whitebg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 30px;
+            color: black(199, 194, 194);
+        } 
+        .row img {
+            width:7;
+            height: 150px;
+            margin: 20px 0px;
+        }
+        .ratings{
+            line-height: 150px;
+        }
+        .ratings h2{
+            margin-top: 40px;
+            font-weight: bolder;
+          
+        }
+        .ratings div{
+            margin-top: -50px;
+        }
+        .productDescription{
+            margin: 10px;
+            font-size: 12px;
+           border:2px solid gray;
+        }  p{
+            font-size: 12px;
+            text-transform:capitalize;
+        }
+      
+         h2{
+            margin-top: 40px;
+            font-weight: bolder;
+          
+        }
+        h3{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .checked{
+            color: yellow;
+        }
+        .usbrating{
+            margin-bottom: 5px;
+        }
+        #buybtn{
+            height: 50px;
+            align-self: center;
+            font-size: 16px;
+            font-weight: bolder;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="container categoryProducts">
+        <div class="row introduction ">
+            <img class="col-md-3" src="images/categoryProducts/jahia.webp">
+            <div class="col-md-5 ratings">
+                <h2>Jahia Digital Experience Platform</h2>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <button class="col-md-2 btn btn-dark btn-outline-secondary" id="buybtn">Buy Now</button>
+        </div>
+        <p class="row productDescription">
+            Jahia is a Java-based enterprise content management system. It features an integrated user portal, web
+            publishing and content management, document management, collaboration, and multi-channel publishing.
+        </p>
+        <div class="row">
+            <div class="col-md-6 pros">
+                <h2>Pros</h2>
+                <i class="	fa fa-plus-square"> </i>
+                <p>It very well provide 360 degree view of customers. It consolidate data points.</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>End user personalization</p>
+                <i class="	fa fa-plus-square"></i>
+                <p>Website Management</p>
+
+            </div>
+            <div class="col-md-6 cons">
+                <h2>Cons</h2>
+                <i class="fa fa-minus-square"></i>
+                <p>They should have provided Templates for certain fixed types of use cases.</p>
+                <i class="fa fa-minus-square"></i>
+                <p> Jahia dev tools are not production-ready resources.</p>
+                <i class="fa fa-minus-square"></i>
+                <p>Not possible to reverse a mistake</p>
+            </div>
+        </div>
+
+     
+        <div class="row ">
+            <div class="col-md-6 features">
+                <h2>Features</h2>
+                <i class="fa fa-check-circle"></i>
+                <p>Content creation and editing</p>
+                <i class="fa fa-check-circle"></i>
+                <p>Digital Asset Management (DAM)
+                </p>
+                <i class="fa fa-check-circle"></i>
+                <p>Taxonomy management</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Pre-built, customizable page templates and themes</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Multi-channel content delivery</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Language management</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Validation Workflows</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Headless CMS – Content & Media Manager (Content API, GraphQL)</p>
+            </div>
+            <div class="col-md-6 features">
+                <h2 style="visibility: hidden;" >Features</h2>
+                <i class="fa fa-check-circle"></i>
+                <p>Traditional CMS</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Portal framework</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Role based content</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>250+ out-of-the-box connectors</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Personalization management UI</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>A/B testing and optimization</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>built-in analytics and reporting</p>
+                <i class="fa fa-check-circle"></i>
+                <p>Form generator</p>
+
+            </div>
+        </div>
+
+        <h2>Offerings</h2>
+        <div class="row features"  >
+            <div class="col-md-12">
+
+                <i class="fa fa-check-circle"></i>
+                <p>Free Trial</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Free/Freemium Version</p>
+
+                <i class="fa fa-check-circle"></i>
+                <p>Premium Consulting / Integration Services</p>
+            </div>
+
+        </div>
+
+
+        <h2>What is Jahia Solution Group for?</h2>
+        <div class="row features">
+            <div class="col-md-12">
+                <p>Jahia Solutions Group aims to make digital experiences simpler. Built on a cloud-based platform,
+                    Jahia helps organizations leverage their content and customer data to fully engage with their
+                    customers. Jahia integrates into existing technology stacks and can be customized to meet each
+                    organization’s specific business needs and challenges.
+                    Founded in 2002 and headquartered in Switzerland, Jahia has offices in Boston, Toronto and Paris.
+                    The vendor states Jahia’s customer community includes hundreds of global brands and organizations,
+                    including Ben & Jerry’s, Nationwide, NASA and General Motors.</p>
+            </div>
+        </div>
+
+        <h2>What is Jahia Digital Experience Platform's best feature?</h2>
+        <div class="row features">
+            <div class="col-md-12">
+                <p>Reviewers rate Support Rating highest, with a score of 8.2.</p>
+            </div>
+        </div>
+
+
+
+        <h2>Who uses Jahia Digital Experience Platform?</h2>
+        <div class="row features">
+            <div class="col-md-12">
+                <p>The most common users of Jahia Digital Experience Platform are from Enterprises (1,001+ employees)
+                    and the Information Technology & Services industry.</p>
+            </div>
+        </div>
+
+        <h2>REVIEWS AND RATINGS</h2>
+        <div class="row features">
+            <div class="col-md-6 usbrating">
+                <h3>Likelihood to Renew</h3>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa- checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+            </div>
+            <div class="col-md-6 usbrating">
+                <h3>Usability</h3>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+            </div>
+            <div class="col-md-6 usbrating">
+                <h3>Availability</h3>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+            </div>
+            <div class="col-md-6 usbrating">
+                <h3>Support Rating</h3>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

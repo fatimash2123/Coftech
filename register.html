@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/register.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div id="loginpage">
+                    <h1>Register</h1>
+
+                    <label>First Name<br>
+                        <i class="fa fa-user"></i>
+                        <input id="first" type="text">
+                        <span id="FirstText"></span>
+                    </label>
+
+                    <label>Last Name<br>
+                        <i class="fa fa-user"></i>
+                        <input id="last" type="text">
+                        <span id="LastText"></span>
+                    </label>
+
+                    <label>
+                        Gender<br>
+                        
+                            <input type="radio" name="Gender" value="male" checked>Male
+                        
+                    
+                            <input type="radio" name="Gender" value="female">Female
+                        
+                    </label>
+
+
+
+
+                    <label>Password<br>
+                        <i class="fa fa-lock	"></i>
+                        <input id="Pass" type="password">
+                        <span id="UserPass"></span>
+                    </label>
+
+
+                    <label>Confirm Password<br>
+                        <i class="fa fa-lock	"></i>
+                        <input id="ConPass" type="password">
+                        <span id="ConfirmPass"></span>
+                    </label>
+
+                    <label>Email<br>
+                        <i class="fa fa-vcard"></i>
+                        <input id="emaill" type="text">
+                        <span id="EmailText"></span>
+                    </label>
+
+                    <label>Phone Number<br>
+                        <i class="fa fa-mobile-phone"></i>
+                        <input id="phNumber" type="text">
+                        <span id="PhoneText"></span>
+                    </label>
+                    <br>
+
+
+
+                    <button id="loginbtn" class="btn btn-dark btn-outline-secondary">Register</button>
+
+                    
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $('button').click(function () {
+
+
+
+
+        var firstname = $("#first").val();
+        const pattern = /^[A-Za-z]{3,15}$/;
+    
+        if (!pattern.test(firstname)) {
+            $('#FirstText').text("**First Name is not correct. Must contain only alphabets");
+        }
+        else {
+
+            $('#FirstText').text("");
+        }
+
+        var lastname = $("#last").val();
+        if (!pattern.test(lastname)) {
+            $('#LastText').text("**Last Name is not correct. Must contain only alphabets");
+        }
+        else {
+            $('#LastText').text("");
+        }
+
+
+
+
+        var password = $("#Pass").val()
+        const patternPass = /[A-Z]+[a-z]+[0-9]+[@#$%^&*_]+/;
+        if (!patternPass.test(password)) {
+            $("#UserPass").text("**You entered a wrong password. Password must contain atleast 1 Upper Alphabet, 1 Lower Alphabet, 1 digit and 1 special character ");
+        }
+        else {
+
+            $("#UserPass").text("");
+        }
+
+        var confirmPassword = $("#ConPass").val();
+        if (!patternPass.test(password) || password != confirmPassword) {
+            $("#ConfirmPass").text("**You Password is not matched");
+        }
+        else { $("#ConfirmPass").text(""); }
+
+
+        var emailcheck = $("#emaill").val();
+        const emailPatt = /^[A-Za-z0-9_#$%]+@[a-z]{3,15}\.[a-z]{3,15}$/;
+        if (!emailPatt.test(emailcheck)) {
+            $("#EmailText").text("**Your Email is not correct");
+        }
+        else { $("#EmailText").text("") };
+
+        
+        var phoneNumber= $("#phNumber").val();
+        const phNoPatt = /^[0]{1}[0-9]{3}-[0-9]{7}$/;
+        if (!phNoPatt.test(phoneNumber)) {
+            $("#PhoneText").text("**Your Phone Number is not correct");
+        }
+        else { $("#PhoneText").text("") };
+
+    })
+</script>
+
+</html>

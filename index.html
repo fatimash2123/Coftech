@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .navigationItem {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      width: 10vw;
+
+
+      margin-left: 5px;
+      text-overflow: ellipsis;
+
+    }
+
+    .navigationItemContainer {
+
+      text-align: center;
+      align-items: center;
+      margin-left: 20vw;
+      font-size: 14px;
+      text-overflow: ellipsis;
+    }
+
+    .heading {
+      font-size: 30px;
+      margin-top: -20px;
+      margin-left: -10px;
+      line-height: 40px;
+      text-align: right;
+    }
+
+    .dropdownList {
+      width: 180px;
+      font-size: 12px;
+      border: 2px solid black;
+    }
+
+    .captionDiv {
+      background-color: black;
+      opacity:0.5;
+      position:absolute;
+     
+      
+    }
+
+    .sliderimg {
+      height: 700px;
+    }
+
+    .packageInfo {
+      height: 400px;
+    }
+
+    .packagebody {
+      height: 350px;
+    }
+
+    .pkgContainer button {
+      height: 100px;
+      font-size: 18px;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+    .productContainer {
+      height: 900px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+    }
+
+    .categoryContainer {
+      height: 500px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      top:100px;
+      left:200px;
+    }
+
+    .actualproducts {
+      height: 400px;
+      align-content: center;
+    }
+
+    .actualproducts img {
+      height: 170px;
+      width:250px
+
+    }
+
+    h1 {
+      font-weight: bolder;
+      color: white;
+      line-height: 30px;
+      font-size: 30px;
+    }
+
+    .footer {
+      height: 200px;
+      margin-top: 30px;
+      color: white;
+      align-items: center;
+      align-content: center;
+      box-sizing: border-box;
+    }
+
+.footer ul{
+  height:60;
+}
+    .footer li {
+
+      color: white;
+      height:30px;
+    }
+
+    .footer p {
+      text-align: center;
+      height:30px;
+      font-size: 14px;
+      font-weight: bold;
+
+    }
+    .footer ul a{
+      height: 30px;
+      color: white;
+      font-size: 12px;
+    }
+    .captionDiv p{
+      font-size: 40px;
+      font-weight: bolder;
+      opacity: 0.9;
+      position: relative;
+    }
+    
+    .captionDiv {
+      background-color: black;
+      opacity:0.5;
+      position:absolute;
+     
+      
+    }
+    .categoryContainer img{
+     
+      height:100%;
+      width:100%;
+      box-sizing: border-box;
+    }
+    .categoryContainer a{
+     
+      height:70%;
+      width:80%;
+      box-sizing: border-box;
+    }
+    #webimg{
+
+    }
+    #maling{
+      width:200px;
+    }
+    .col-sm-2 button{
+      width:100px;
+      color:white;
+      font-weight: bolder;
+    
+    }
+    .btnContainer{
+      margin-top: -20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+
+    <a class="navbar-brand mb-0 h1 heading" href="index.html">
+
+      IT Store
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  navigationItemContainer">
+        <li class="nav-item active">
+          <a class="nav-link navigationItem" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="dropdown-toggle nav-link navigationItem" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+
+          <div class="dropdown-menu dropdownList" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="categoryTesting.html">Testing</a>
+            <a class="dropdown-item" href="category.html">Web Portal</a>
+            <a class="dropdown-item" href="categoryInternetOfThings.html">Internet of Things</a>
+          </div>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navigationItem" href="blogCategories.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navigationItem" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navigationItem" href="aboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navigationItem" href="contactus.html">Contact Us</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </nav>
+  <div class=" btnContainer bg-dark">
+    <div class="row">
+      <div class="col-sm-8"></div>
+      <div class="col-sm-2">
+        <a href="login.html">
+        <button class="btn btn-outline-secondary">Login</button>
+      </a>
+      </div>
+      
+      <div class="col-sm-2">
+        <a href="register.html">
+        <button class="btn btn-outline-secondary">Register</button>
+      </a>  
+    </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Slider-->
+  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 sliderimg" src="images/categoryProducts/testing.jpg" alt="First slide">
+        <div class="carousel-caption captionDiv">
+        
+          <p>Testing shows presence not the absence of bugs</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 sliderimg" src="images/categoryProducts/internet of things.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block captionDiv">
+         
+          <p>The Internet of Things augments the world</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 sliderimg" src="images/categoryProducts/web portal.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block captionDiv">
+          
+          <p>Web is humanity connected by technology</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--Packages-->
+  <div class="container pkgContainer">
+    <p class="row rowpkgbuttons">
+      <button class="btn btn-sm btn-dark  active col-lg-3 pakageButtons " type="button" data-toggle="collapse"
+        data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1"> Basic Week
+        Package</a>
+        <button class="btn btn-sm btn-dark  active col-lg-3 pakageButtons" type="button" data-toggle="collapse"
+          data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Basic Monthly
+          Package</button>
+        <button class="btn btn-sm btn-dark  active col-lg-3 pakageButtons" type="button" data-toggle="collapse"
+          data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Premium 6
+          Months Package</button>
+        <button class="btn btn-sm btn-dark  active col-lg-3 pakageButtons" type="button" data-toggle="collapse"
+          data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Premium 8
+          Months Package</button>
+
+    </p>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="collapse multi-collapse packageInfo collapse-show" id="multiCollapseExample1">
+          <div class="card card-body packagebody bg-light">
+            <h2>USD $6</h2>
+            <p>tax is not included</p>
+            <input type="button" class="btn btn-outline-secondary" value="Buy Now">
+            <ul>
+              <li><i class="fa fa-check-circle"></i>Agent dashboard</li>
+              <li><i class="fa fa-check-circle"></i> Call tracking</li>
+              <li><i class="fa fa-check-circle"></i>Natural language processing for IVR
+              </li>
+              <li><i class="fa fa-check-circle"></i>Voice Routing </li>
+              <li><i class="fa fa-check-circle"></i>Web Chat</li>
+              <li><i class="fa fa-check-circle"></i>Workforce Scheduling
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="collapse multi-collapse packageInfo" id="multiCollapseExample2">
+          <div class="card card-body packagebody bg-light">
+            <h2>USD $10</h2>
+            <p>tax is not included</p>
+            <input type="button" class="btn btn-outline-secondary" value="Buy Now">
+            <ul>
+              <li><i class="fa fa-check-circle"></i>Chatbots
+              </li>
+              <li><i class="fa fa-check-circle"></i> Call tracking</li>
+              <li><i class="fa fa-check-circle"></i>Natural language processing for IVR
+              </li>
+              <li><i class="fa fa-check-circle"></i>Voice Routing </li>
+              <li><i class="fa fa-check-circle"></i>Web Chat</li>
+              <li><i class="fa fa-check-circle"></i>Workforce Scheduling</li>
+
+              </li>
+              <li><i class="fa fa-check-circle"></i>Social Listening
+              </li>
+              <li><i class="fa fa-check-circle"></i>Unified Communications
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="collapse multi-collapse packageInfo" id="multiCollapseExample3">
+          <div class="card card-body packagebody bg-light">
+            <h2>USD $12</h2>
+            <p>tax is not included</p>
+            <input type="button" class="btn btn-outline-secondary" value="Buy Now">
+            <ul>
+              <li><i class="fa fa-check-circle"></i>Live chat channel
+              </li>
+              <li><i class="fa fa-check-circle"></i> Call tracking</li>
+              <li><i class="fa fa-check-circle"></i>Natural language processing for IVR
+              </li>
+              <li><i class="fa fa-check-circle"></i>Voice Routing </li>
+              <li><i class="fa fa-check-circle"></i>Web Chat</li>
+              <li><i class="fa fa-check-circle"></i>Workforce Scheduling</li>
+              <li><i class="fa fa-check-circle"></i>Chatbots
+              </li>
+              <li><i class="fa fa-check-circle"></i>Social Listening
+              </li>
+              <li><i class="fa fa-check-circle"></i>Unified Communications
+              </li>
+              <li><i class="fa fa-check-circle"></i>Historical reporting
+              </li>
+              <li><i class="fa fa-check-circle"></i>SMS
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="collapse multi-collapse packageInfo" id="multiCollapseExample4">
+          <div class="card card-body packagebody bg-light">
+            <h2>USD $15</h2>
+            <p>tax is not included</p>
+            <input type="button" class="btn btn-outline-secondary" value="Buy Now">
+            <ul>
+              <li><i class="fa fa-check-circle"></i>Live chat channel
+              </li>
+              <li><i class="fa fa-check-circle"></i>VoIP</li>
+              <li><i class="fa fa-check-circle"></i> Call tracking</li>
+              <li><i class="fa fa-check-circle"></i>Natural language processing for IVR
+              </li>
+              <li><i class="fa fa-check-circle"></i>Voice Routing </li>
+              <li><i class="fa fa-check-circle"></i>Web Chat</li>
+              <li><i class="fa fa-check-circle"></i>Workforce Scheduling</li>
+              <li><i class="fa fa-check-circle"></i>Intelligent call routing
+
+              </li>
+              <li><i class="fa fa-check-circle"></i>Social Listening
+              </li>
+              <li><i class="fa fa-check-circle"></i>Unified Communications
+              </li>
+              <li><i class="fa fa-check-circle"></i>Historical reporting
+              </li>
+              <li><i class="fa fa-check-circle"></i>SMS
+              </li>
+              <li><i class="fa fa-check-circle"></i>Social media channels
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Products-->
+  <section>
+    <div class="container productContainer bg-dark products">
+      <h1>Some Important Products</h1>
+      <div class="row">
+        <div class="card col-sm-4 actualproducts">
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top img-fluid" src="images/categoryProducts/aws.jpg" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title">Amazon API Gateway</h5>
+            <p class="card-text">AWS offers the Amazon API Gateway supports the creation and publication of an API for
+              web
+              applications, as well as its monitoring and maintenance. The Amazon API Gateway is able to
+              support thousands of API calls concurrently and provides traffic management, as well as
+              monitoring</p>
+
+          </div>
+        </div>
+        <div class="card col-sm-4 actualproducts">
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top img-fluid" src="images/categoryProducts/sophos.webp" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Sophos Intercept X</h5>
+            <p class="card-text">Sophos Endpoint Protection (Sophos EPP) with Intercept X is an endpoint security
+              product
+              providing an antivirus / antimalware solution that when upgraded with Intercept X or Intercept X
+              Advanced provides advanced threat detection and EDR capabilities.</p>
+          </div>
+        </div>
+        <div class="card col-sm-4 actualproducts">
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top img-fluid" id="malimg" src="images/categoryProducts/malwarebytes.webp" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Malwarebytes</h5>
+            <p class="card-text">Malwarebytes is a antimalware application for home and small businesses, which blocks
+              viruses,
+              malware, hackers, viruses, and malicious websites.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card col-sm-4 actualproducts">
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top img-fluid" src="images/categoryProducts/boomi.webp" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Postman</h5>
+            <p class="card-text">Postman, headquartered in San Francisco, offers their flagship API development and
+              management free
+              to small teams and independent developers. Higher tiers (Postman Pro and Postman Enterprise)
+              support API management, as well as team collaboration, extended support and other advanced
+              features</p>
+          </div>
+        </div>
+
+        <div class="card col-sm-4 actualproducts">
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top img-fluid" src="images/categoryProducts/dyrad.jpg" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Dyrad</h5>
+            <p class="card-text">Dryad is a large-scale IoT startup based in Berlin-Brandenburg. Formerly known as, Eywa
+              Networks
+              GmbH, Dryad's mission is to develop a large-scale environmental IoT network that allows public
+              and private forest owners to monitor, analyze and protect the world’s largest, most remote</p>
+          </div>
+        </div>
+        <div class="card col-sm-4 actualproducts">
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top  img-fluid" src="images/categoryProducts/onsemble.png" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"> OnSemble</h5>
+            <p class="card-text">OnSemble is the Employee Intranet in use. It answers the problem of enterprise document
+              sharing,
+              company news and just keeping in touch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Categories-->
+  <section>
+    <div class="container categoryContainer bg-dark category">
+      <h1>Some Famous Categories</h1>
+      <div class="row">
+        <div class="card col-sm-4 ">
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top  img-fluid" id="webimg"  src="images/categoryProducts/web portal.jpg" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Web Portal</h5>
+            <p class="card-text">Web portal software is an online tool allowing companies secured, unified, and
+              personalized access to enterprise data and applications. This creates a better and more efficient
+              communication portal between businesses, customers, and internal employees.</p>
+
+          </div>
+        </div>
+        <div class="card col-sm-4" >
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top  img-fluid"  src="images/categoryProducts/internet of things.jpg"
+              alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Internet of Things</h5>
+            <p class="card-text">The Internet of Things (IoT) describes a network of physical objects that are connected
+              by
+              embedded sensors, software, and communications technologies to exchange data with other
+              devices and systems using the internet.</p>
+
+          </div>
+        </div>
+        <div class="card col-sm-4" >
+          <a href="#" class="btn border-secondary">
+            <img class="card-img-top  img-fluid"  src="images/categoryProducts/testing.jpg" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Testing Services</h5>
+            <p class="card-text">Testing services are engaged by businesses and organizations to verify that their new
+              or
+              updated technical products, software, and services are securely performing according to
+              their requirements and specifications. These services provide testing and subject matter
+              expertise, easing the QA burden on businesses that use them, while providing an independent
+              evaluation of the test matter.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer bg-dark ">
+    <div>
+      <p>Copyright © 2022, Design by FatimaShahzad </p>
+      <ul>
+        <li>
+          <a href="contactus.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="aboutUs.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+</body>
+
+</html>

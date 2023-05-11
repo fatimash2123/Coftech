@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="CSS/admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <br>
+
+    <div class="container">
+        <h2 id="adminHeading">Admin Page</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs bg-dark tabName" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Home Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabName" data-toggle="tab" href="#menu1">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabName" data-toggle="tab" href="#menu2">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabName" data-toggle="tab" href="#menu3">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabName" data-toggle="tab" href="#menu4">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabName" data-toggle="tab" href="#menu5">Categories</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+
+                <!--Inside Tab-->
+                <div class="container">
+                    <br>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs bg-secondary" role="tablist">
+
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#categoryHome">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#productHome">Products</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!--For categories-->
+                        <div id="categoryHome" class="container tab-pane fade"><br>
+                            <section class="row">
+                                <div class="container categoryContainer bg-dark category">
+                                    <div class="row">
+                                        <div class="card col-sm-4 actualproducts">
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top  img-fluid" id="webPortalImage"
+                                                    src="images/categoryProducts/web portal.jpg" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Web Portal</h5>
+                                                <p class="card-text">Web portal software is an online tool allowing
+                                                    companies secured, unified, and
+                                                    personalized access to enterprise data and applications. This
+                                                    creates a better and more efficient
+                                                    communication portal between businesses, customers, and internal
+                                                    employees.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card col-sm-4" actualproducts>
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top  img-fluid"
+                                                    src="images/categoryProducts/internet of things.jpg"
+                                                    alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Internet of Things</h5>
+                                                <p class="card-text">The Internet of Things (IoT) describes a network of
+                                                    physical objects that are connected
+                                                    by
+                                                    embedded sensors, software, and communications technologies to
+                                                    exchange data with other
+                                                    devices and systems using the internet.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card col-sm-4" actualproducts>
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top  img-fluid"
+                                                    src="images/categoryProducts/testing.jpg" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Testing Services</h5>
+                                                <p class="card-text">Testing services are engaged by businesses and
+                                                    organizations to verify that their new
+                                                    or
+                                                    updated technical products, software, and services are securely
+                                                    performing according to
+                                                    their requirements and specifications. These services provide
+                                                    testing and subject matter
+                                                    expertise, easing the QA burden on businesses that use them, while
+                                                    providing an independent
+                                                    evaluation of the test matter.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Add new Category</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Edit Categories</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Category</button>
+                            </div>
+
+                        </div>
+                        <!--For Products-->
+                        <div id="productHome" class="container tab-pane fade"><br>
+                            <section class="row">
+                                <div class="container productContainer bg-dark products">
+                                   
+                                    <div class="row">
+                                        <div class="card col-sm-4 actualproducts">
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top img-fluid"
+                                                    src="images/categoryProducts/aws.jpg" alt="Card image cap"></a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Amazon API Gateway</h5>
+                                                <p class="card-text">AWS offers the Amazon API Gateway supports the
+                                                    creation and publication of an API for
+                                                    web
+                                                    applications, as well as its monitoring and maintenance. The Amazon
+                                                    API Gateway is able to
+                                                    support thousands of API calls concurrently and provides traffic
+                                                    management, as well as
+                                                    monitoring</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card col-sm-4 actualproducts">
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top img-fluid"
+                                                    src="images/categoryProducts/sophos.webp" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sophos Intercept X</h5>
+                                                <p class="card-text">Sophos Endpoint Protection (Sophos EPP) with
+                                                    Intercept X is an endpoint security
+                                                    product
+                                                    providing an antivirus / antimalware solution that when upgraded
+                                                    with Intercept X or Intercept X
+                                                    Advanced provides advanced threat detection and EDR capabilities.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card col-sm-4 actualproducts">
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top img-fluid"
+                                                    src="images/categoryProducts/malwarebytes.webp"
+                                                    alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Malwarebytes</h5>
+                                                <p class="card-text">Malwarebytes is a antimalware application for home
+                                                    and small businesses, which blocks
+                                                    viruses,
+                                                    malware, hackers, viruses, and malicious websites.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="card col-sm-4 actualproducts">
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top img-fluid"
+                                                    src="images/categoryProducts/boomi.webp" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Postman</h5>
+                                                <p class="card-text">Postman, headquartered in San Francisco, offers
+                                                    their flagship API development and
+                                                    management free
+                                                    to small teams and independent developers. Higher tiers (Postman Pro
+                                                    and Postman Enterprise)
+                                                    support API management, as well as team collaboration, extended
+                                                    support and other advanced
+                                                    features</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card col-sm-4 actualproducts">
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top img-fluid"
+                                                    src="images/categoryProducts/dyrad.jpg" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Dyrad</h5>
+                                                <p class="card-text">Dryad is a large-scale IoT startup based in
+                                                    Berlin-Brandenburg. Formerly known as, Eywa
+                                                    Networks
+                                                    GmbH, Dryad's mission is to develop a large-scale environmental IoT
+                                                    network that allows public
+                                                    and private forest owners to monitor, analyze and protect the
+                                                    world’s largest, most remote</p>
+                                            </div>
+                                        </div>
+                                        <div class="card col-sm-4 actualproducts">
+                                            <a href="#" class="btn border-secondary">
+                                                <img class="card-img-top  img-fluid"
+                                                    src="images/categoryProducts/onsemble.png" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title"> OnSemble</h5>
+                                                <p class="card-text">OnSemble is the Employee Intranet in use. It
+                                                    answers the problem of enterprise document
+                                                    sharing,
+                                                    company news and just keeping in touch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Add new Product</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Edit Product</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Product</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--For Gallery-->
+            <div id="menu1" class="container tab-pane fade "><br>
+                <!--Inside Tab-->
+                <div class="container ">
+                    <br>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs bg-secondary" role="tablist">
+
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#Conference">Conference</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#Celebration">Celebration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#Meetings">Meetings</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content galleryDiv">
+                        <!--For Conference-->
+                        <div id="Conference" class="container tab-pane fade"><br>
+                            <h1>Conferences
+                            </h1>
+                            <div class="row conferences">
+                                <a target="_blank" class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail"
+                                    href="images/gallery/conference/pexels-christina-morillo-1181396.jpg"> <img
+                                        src="images/gallery/conference/pexels-christina-morillo-1181396.jpg"
+                                         style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery/conference/pexels-christina-morillo-1181421.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/conference/pexels-christina-morillo-1181421.jpg"
+                                         style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery/conference/pexels-fauxels-3182759.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/conference/pexels-fauxels-3182759.jpg"  style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery/conference/pexels-fauxels-3184285.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/conference/pexels-fauxels-3184285.jpg"  style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery/conference/pexels-fauxels-3184360.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/conference/pexels-fauxels-3184360.jpg"  style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery/conference/pexels-mikael-blomkvist-6476254.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/conference/pexels-mikael-blomkvist-6476254.jpg"
+                                         style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery/conference/pexels-rfstudio-3811082.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/conference/pexels-rfstudio-3811082.jpg"  style="width:100px;height:100px; align-self:center">
+                                </a>
+
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Add Picture</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Picture</button>
+                            </div>
+
+                        </div>
+                        <!--For Celebration-->
+                        <div id="Celebration" class="container tab-pane fade"><br>
+                            <h1>Celebrations
+                            </h1>
+                            <div class="row celebration">
+                                <a target="_blank" href="images/gallery//celebration/pexels-annalouise-1387577.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery//celebration/pexels-annalouise-1387577.jpg"
+                                        style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery//celebration/pexels-jeshootscom-834894.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery//celebration/pexels-jeshootscom-834894.jpg"
+                                        style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery//celebration/pexels-marcin-dampc-1684187.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery//celebration/pexels-marcin-dampc-1684187.jpg"
+                                        style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery//celebration/pexels-photomix-company-226737.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery//celebration/pexels-photomix-company-226737.jpg"
+                                        style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank" href="images/gallery//celebration/pexels-pixabay-433452.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery//celebration/pexels-pixabay-433452.jpg" style="width:100px;height:100px; align-self:center">
+                                </a>
+                                <a target="_blank"
+                                    href="images/gallery//celebration/pexels-sharon-mccutcheon-1191710.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery//celebration/pexels-sharon-mccutcheon-1191710.jpg"
+                                        style="width:100px;height:100px; align-self:center">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Add Picture</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Picture</button>
+                            </div>
+
+                        </div>
+                        <!--For Meetings-->
+                        <div id="Meetings" class="container tab-pane fade"><br>
+                            <h1>Meetings
+                            </h1>
+                            <div class="row meetings">
+                                <a target="_blank" href="images/gallery/Meetings/pexels-rodnae-productions-7648052.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/Meetings/pexels-rodnae-productions-7648052.jpg"
+                                        style="width:100px; height: 100px;">
+                                </a>
+
+                                <a target="_blank" href="images/gallery/Meetings/pexels-rodnae-productions-7648306.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/Meetings/pexels-rodnae-productions-7648306.jpg"
+                                        style="width:100px; height: 100px;">
+                                </a>
+                                <a target="_blank" href="images/gallery/Meetings/pexels-rodnae-productions-7648467.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/Meetings/pexels-rodnae-productions-7648467.jpg"
+                                        style="width:100px; height: 100px;">
+                                </a>
+                                <a target="_blank"
+                                    href="images/gallery/Meetings/pexels-rodnae-productions-7648465 (1).jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/Meetings/pexels-rodnae-productions-7648465 (1).jpg"
+                                        style="width:100px; height: 100px;">
+                                </a>
+                                <a target="_blank" href="images/gallery/Meetings/pexels-rodnae-productions-7648476.jpg"
+                                    class="col-lg-3 col-md-4 col-sm-6 img-fluid img-thumbnail">
+                                    <img src="images/gallery/Meetings/pexels-rodnae-productions-7648476.jpg"
+                                        style="width:100px; height: 100px;">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Add Picture</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Picture</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--For Blogs-->
+            <div id="menu2" class="container tab-pane fade"><br>
+                <!--Inside Tab-->
+                <div class="container">
+                    <br>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs bg-secondary" role="tablist">
+
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#TechTrends">Tech Trends</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab"
+                                href="#ArtificialIntelligence">Artificial
+                                Intelligence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#Programming">Programming</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!--For TechTrends-->
+                        <div id="TechTrends" class="container tab-pane fade"><br>
+                            <div class="container">
+                                <div class="row d-flex justify-content-between">
+                                    <a href="techcompany.html" target="_blank" class="card col-lg-4 bogss">
+                                        <div>
+                                            <img class="card-img-top" src="images/blogs/techcompany.avif"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <p class="card-text">Find out the top 4 of the best tech companies’
+                                                    promotions on Linkedin</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="austinblog.html" target="_blank" class="card col-lg-4  bogss">
+                                        <div>
+                                            <img class="card-img-top" src="images/blogs/austin.webp"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <p class="card-text">Austin emerges as a city of unicorns and tech
+                                                    giants</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="setgoals.html" target="_blank" class="card col-lg-4  bogss">
+                                        <div>
+                                            <img class="card-img-top" src="images/blogs/setgoals.jpg"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <p class="card-text">SET GOALS AND ADVANCE YOUR TECH CAREER IN 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="tentechBlog.html" target="_blank" class="card col-lg-4  bogss">
+                                        <div>
+                                            <img class="card-img-top" src="images/blogs/technology.avif"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <p class="card-text">10 TECH BLOGS YOU NEED TO FOLLOW IN 2021</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Create New Blog </button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Blog</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Edit Blog</button>
+                            </div>
+                        </div>
+                        <!--For ArtificialIntelligence-->
+                        <div id="ArtificialIntelligence" class="container tab-pane fade"><br>
+                            <div class="container">
+                                <div class="row d-flex justify-content-between">
+                                    <a href="aisaleForse.html" target="_blank" class="card col-lg-4 bogss">
+                                        <div>
+                                            <img class="card-img-top" src="images/blogs/aisaleforce.webp"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <p class="card-text">Salesforce upgrades marketing, field service and
+                                                    sales tools with AI</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Create New Blog </button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Blog</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Edit Blog</button>
+                            </div>
+                        </div>
+                        <!--For Programming-->
+                        <div id="Programming" class="container tab-pane fade"><br>
+
+                            <div class="container">
+                                <div class="row d-flex justify-content-between">
+                                    <a href="tencodingblog.html" target="_blank" class="card col-lg-4 bogss">
+                                        <div>
+                                            <img class="card-img-top" src="images/blogs/codingblog.jpg"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <p class="card-text">10 coding blogs will keep you ahead of the tech
+                                                    curve</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-dark  btn-secondary buttons">Add new Product</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Edit Product</button>
+                                <button class="btn btn-dark  btn-secondary buttons">Delete Product</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--For Contact Us-->
+            <div id="menu3" class="container tab-pane fade"><br>
+                <div class="container">
+                    <div class="row">
+                        <iframe src="contactus.html" id="frame" class="col-sm-12"></iframe>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-dark  btn-secondary buttons">Add Fixed Information</button>
+                        <button class="btn btn-dark  btn-secondary buttons">Add Form Information</button>
+                    </div>
+                </div>
+            </div>
+            <!--For About Us-->
+            <div id="menu4" class="container tab-pane fade"><br>
+                <div class="container">
+                    <div class="row">
+                        <iframe src="aboutUs.html" id="frame" class="col-sm-12"></iframe>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-dark  btn-secondary buttons">Change AboutUs Text</button>
+                        <button class="btn btn-dark  btn-secondary buttons">Add Form Information</button>
+                    </div>
+                </div>
+            </div>
+            <!--For Categories-->
+            <div id="menu5" class="container tab-pane fade"><br>
+
+                <!--Inside Tab-->
+                <div class="container">
+                    <br>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs bg-secondary" role="tablist">
+
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist"  data-toggle="tab" href="#WebPortal">Web Portal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#Testing">
+                                Testing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondaryTablist" data-toggle="tab" href="#InternetOfThings">Internet Of
+                                Things</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!--For WebPortal-->
+                        <div id="WebPortal" class="container tab-pane fade"><br>
+                            <div class="container categoriesProducts">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/jahia.webp">
+                                        <h3>Jahia
+                                        </h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/board Pro.jpg">
+                                        <h3>BoardPro
+
+                                        </h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/mychart.png">
+                                        <h3>MyChart
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/verint.jpg">
+                                        <h3>Verint
+
+                                        </h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/onsemble.png">
+                                        <h3>OnSemble
+
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <button class="btn btn-dark  btn-secondary buttons">Create Product</button>
+                                    <button class="btn btn-dark  btn-secondary buttons">Delete Product</button>
+                                    <button class="btn btn-dark  btn-secondary buttons">Edit Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--For Testing-->
+                        <div id="Testing" class="container tab-pane fade"><br>
+                            <div class="container categoriesProducts">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/tst5.png">
+                                        <h3>Testlio
+
+                                        </h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/tst2.png">
+                                        <h3>Centercode
+
+
+                                        </h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/tst3.png">
+                                        <h3>Digivante
+
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/tst4.jpg">
+                                        <h3>AutomationHQ
+
+
+                                        </h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <button class="btn btn-dark  btn-secondary buttons">Create Product</button>
+                                    <button class="btn btn-dark  btn-secondary buttons">Delete Product</button>
+                                    <button class="btn btn-dark  btn-secondary buttons">Edit Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--For InternetOfThings-->
+                        <div id="InternetOfThings" class="container tab-pane fade"><br>
+                            <div class="container categoriesProducts">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/iimg1.jpg">
+                                        <h3>AWS IoT Core
+
+                                        </h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/iimg2.webp">
+                                        <h3>ThingsWorx
+
+
+                                        </h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="images/categoryProducts/iimg3.webp">
+                                        <h3>Azure IoT Central
+
+                                        </h3>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <button class="btn btn-dark  btn-secondary buttons">Create Product</button>
+                                        <button class="btn btn-dark  btn-secondary buttons">Delete Product</button>
+                                        <button class="btn btn-dark  btn-secondary buttons">Edit Product</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>

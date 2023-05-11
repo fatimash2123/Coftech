@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale Force</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<style>
+  span{
+    display: block;
+    color: rgb(179, 28, 28);   
+}
+    .navbar {
+        width: 100%;
+        height: 100px;
+
+    }
+
+    li {
+        margin: 0px;
+        padding: 0px;
+        width: 130px;
+    }
+
+    .categoryLinks a{
+        color: white;
+    }
+
+    .sidebar{
+        height:400px
+    }
+    .sidebar label,h3,p{
+        color:white;
+    } 
+    #maintext{
+        color:black;
+    }
+    .commentcol{
+        background-image: url("images/gray.avif");
+      
+        align-items: center;
+        box-sizing: border-box;
+    
+        
+    }
+    .comments h2{
+        color: rgb(46, 45, 45);
+        
+    }
+    .comments textarea,input,h2{
+        margin: 15px;
+    }
+    .button {
+        font-size: 16px;
+        margin: 10px;
+        border-radius: 40px;
+        width: 130px;
+        height: 30px;
+
+    }
+    .footer {
+      height: 200px;
+      margin-top: 30px;
+      color: white;
+      align-items: center;
+      align-content: center;
+      box-sizing: border-box;
+    }
+
+.footer ul{
+  height:60;
+
+}
+    .footer li {
+
+      color: white;
+      height:30px;
+      align-self: center;
+      list-style-type: none;
+    }
+
+    .footer p {
+      text-align: center;
+      height:30px;
+      font-size: 14px;
+      font-weight: bold;
+
+    }
+    .footer ul a{
+      height: 30px;
+      color: white;
+      font-size: 12px;
+    
+    }
+
+    .captionDiv p{
+      font-size: 40px;
+      font-weight: bolder;
+      opacity: 0.9;
+      position: relative;
+    }
+    .navigationItem {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      width: 10vw;
+
+
+      margin-left: 5px;
+      text-overflow: ellipsis;
+
+    }
+
+    .navigationItemContainer {
+
+      text-align: center;
+      align-items: center;
+      margin-left: 20vw;
+      font-size: 14px;
+      text-overflow: ellipsis;
+    }
+
+    .heading {
+      font-size: 30px;
+      margin-top: -20px;
+      margin-left: -10px;
+      line-height: 40px;
+      text-align: right;
+    }
+
+    .dropdownList {
+      width: 180px;
+      font-size: 12px;
+      border: 2px solid black;
+    }
+</style>
+
+</head>
+
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+
+    <a class="navbar-brand mb-0 h1 heading" href="index.html">
+
+      IT Store
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  navigationItemContainer">
+        <li class="nav-item active">
+          <a class="nav-link navigationItem" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown active">
+
+          <a class="dropdown-toggle nav-link navigationItem" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+
+          <div class="dropdown-menu dropdownList" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="categoryTesting.html">Testing</a>
+            <a class="dropdown-item" href="category.html">Web Portal</a>
+            <a class="dropdown-item" href="categoryInternetOfThings.html">Internet of Things</a>
+          </div>
+
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link navigationItem" href="blogCategories.html">Blog</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link navigationItem" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link navigationItem" href="aboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link navigationItem" href="contactus.html">Contact Us</a>
+        </li>
+      </ul> 
+
+    </div>
+
+  </nav>
+
+<section class="container">
+    <div class="row">
+        <h1 class="col-md-12">Salesforce upgrades marketing, field service and sales tools with AI</h1>
+    </div>
+    <div class="row " >
+        <p class="col-lg-8" id="maintext">
+            <img src="images/blogs/aisaleforce.webp" style="width: 100%; height: 400px;">
+            Today, timed with a conference out of Sydney, Australia, Salesforce announced new analytics-powered features across its Service and Marketing Cloud suites designed to “‘humanize’ engagement between companies and their customers.” While that might be overpromising, the new and updated tools aim to — in Salesforce’s words — simplify processes like conversing with customers and reconciling disparate marketing data.
+
+“With these latest innovations, Salesforce is exploring how combining marketing and customer service solutions can help global brands pivot to direct-to-consumer and strengthen customer relationships as they navigate social and economic uncertainty, heightened customer expectations and an evolving hybrid working world,” a spokesperson told TechCrunch via email. “These technologies help service teams and marketers create more personalized experiences that drive lifelong customer relationships.”
+
+Service Cloud Voice is gaining connectors from third-party vendors that incorporate customer data, enabling companies to automate call notes and provide customer service agents with real-time suggestions. Among the connectors is a simpler integration with AWS Contact Lens for Service Cloud Voice with Amazon Connect, which brings call transcription and sentiment analysis. Eagle-eyed readers will recall that Amazon Connect began supporting integration with Service Cloud Voice in July 2020, the same year that Contact Lens became generally available.
+
+<strong>
+Salesforce sentiment analysis</strong>
+Salesforce’s sentiment analysis technology for voice calls. Image Credits: Salesforce
+
+
+With the new connectors, a service agent at a retailer can receive recommendations on the next-best actions to process a return or upsell a warranty, Salesforce says. Or, they can follow customer conversation trends to spot product feedback and manage agents based on keywords.
+<strong>
+Tracking anonymous profiles</strong>
+Through (and thanks to) related upgrades, Marketing Cloud now supports Streaming Insights and Data Actions, which aim to capture near real-time data signals — like a new customer, a recent product transaction, or payment issue — to trigger workflow events. Another new capability, Advanced Identity Resolution, leverages AI to match and merge customer data like duplicated fields or records with names that have multiple spellings or that are frequently shortened to nicknames (e.g., “Sam” and “Samantha”).
+
+They’re on-trend features. Marketers, surveys show, are embracing automation, with as much as 63% planning to increase their marketing automation budgets in the near future, according to an Invespcro report. (That’s with the understanding, of course, that “automation” is a broad term.) Social Media Today estimates that three-quarters of all companies were using at least one marketing automation as of 2019.
+
+Salesforce identity resolution
+Identity resolution in action. Image Credits: Salesforce
+
+
+“The advanced identity resolution solution is composed of two parts: matching and reconciliation,” Salesforce SVP of product marketing Bobby Jania explained to TechCrunch via email. “Our solution creates a unified profile that links together the original profiles so that the original data is preserved. [An] identity graph links these together, allowing for source systems to easily query the unified profiles based on the original data ingested, regardless of the reconciliation process and vice versa … [The solution] also brings fuzzy match into the picture allowing for records with misspelled names, nicknames [and more] from different systems to be matched automatically … [Finally,] along with fuzzy match, we’re also now providing normalized email, phone and address match. This helps match records, which are not standardized prior to identity resolution, leading to improved consolidation rates as equally normalized data is matched together.”
+
+More significantly, Marketing Cloud now features Anonymous Profiles, which can track anonymous people in a customer data platform until — as Salesforce explains — the “unidentified data merges with the known customer.” It’s a pushback, in a way, to the movement against customer data tracking spearheaded by consumer advocacy groups, which seeks to make a reasonable degree of anonymity the norm on the web.
+<strong>
+Salesforce anonymous profiles</strong>
+A screenshot showing the anonymous profiles feature. Image Credits: Salesforce
+
+
+Jania clarified: “Anonymous profiles refer to profiles that are absent of any personally identifiable information (e.g., name, email, phone and address data) and therefore are tagged as anonymous. [T]hese are first-party anonymous profiles — i.e., profiles of visitors who come to a company’s website and the company has generated a first-party cookie to track them. They are not third-party cookie identities. We do track fully the anonymous behavioral data tied to each anonymous profile. If, and when, that person identifies themselves, we take all that data and merge it into the known profile where additional enrichment and combination with other data sources is possible.”
+
+Virtual service calls
+Elsewhere in the Salesforce portfolio, workers using the Salesforce Field Service App for in-person service can now pull up records offline (e.g., personalized work plans, flows and safety checklists), which oddly wasn’t possible before. When not physically present, they can provide virtual service through Visual Remote Assistant, a new feature that gives customers the option to schedule virtual support sessions with augmented reality (AR) from their phone. Salesforce writes: “For example, customers can schedule an appointment with an appliance technician to visually show what is going on with their dishwasher, and the technician can point, draw on the screen and otherwise direct the customer on how to solve the problem in real-time on their own.”
+
+“Consumers will be able to pre-schedule a virtual session through our Field Service Appointment Assistant product. People welcoming a service person into their home or business receive updates and notifications about their service session through Appointment Assistant,” Salesforce marketing SVP Brenda Bown told TechCrunch. “Another way that consumers will have the option for a virtual session is through customer portals, or Experience Cloud products. Our customers will be able to embed the option for consumers to either initiate, or schedule a virtual session via the portal. We expect that contractors providing service in the field who interact with an HQ through a portal would also use this feature to get connected with a subject-matter expert.”
+
+Salesforce virtual service calls
+The enhanced service experience. Image Credits: Salesforce
+
+
+The market for AI- and AR-driven virtual service apps has expanded substantially in recent years, with companies such as CareAR, TechSee, Aquant and Neuron7 competing for dominance. As customers eschew in-person calls for video conferencing — at least when it comes to equipment servicing — the industry could grow further. That’s surely the bet Salesforce is making.
+
+
+ </p>
+
+
+
+
+
+
+        <div class="col-lg-4 bg-secondary sidebar">
+            <div class="container sidebar">
+                <label class="row">Search
+                    <input class="col-md-12" type="search">
+                </label>
+                <hr>
+
+                <label class="row">Categories
+                    <ul class="col-md-12 categoryLinks">
+                        <a href="blogCategories.html">
+                            <li>Internet of things</li>
+                        </a>
+                        <a href="blogCategories.html">
+                            <li>Testing</li>
+                        </a>
+                        <a href="blogCategories.html">
+                            <li>Voice Recognition</li>
+                        </a>
+                        <a href="blogCategories.html">
+                            <li>Web Portal Software</li>
+                        </a>
+                        <a href="blogCategories.html">
+                            <li>API Design Software</li>
+                        </a>
+
+                    </ul>
+                </label>
+                <hr>
+                <div class="row">
+                    <h3>About Us</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the leap into
+                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                        software like
+                        Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container comments">
+<div class="row">
+    <div class="col-lg-4 commentcol">
+    <h2 class="">Leave Your Comments here:</h2>
+    <br>
+    <textarea class="" rows="10" cols="40"></textarea>
+    <span id="Comments"></span>
+    <br>
+    <input type="submit" value="Submit" class="button btn btn-light btn-outline-secondary ">
+</div>
+</div>
+</section>
+<footer class="footer bg-dark ">
+    <div>
+      <p>Copyright © 2022, Design by FatimaShahzad </p>
+      <ul>
+        <li>
+          <a href="contactus.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="aboutUs.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+</body>
+<script>
+
+$('input[type=submit]').click(function () {
+
+
+        var comment = $("textarea").val()
+        if (comment == "") {
+            $("#Comments").text("**Write the Comment")
+        }
+        else {
+            $("#Comments").text("")
+        }
+    })
+</script>
+</html>

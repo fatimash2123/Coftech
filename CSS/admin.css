@@ -1,0 +1,59 @@
+.tabName{
+    color:white;
+    font-size:16px;
+    font-weight:bolder;
+}
+#adminHeading{
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: underline overline;
+    text-align: center;
+}
+
+.secondaryTablist{
+    color:white;
+    font-size:14px;
+    font-weight:bolder;
+    
+}
+.nav a:hover{
+    color:gray;
+}
+.buttons{
+    margin:10px
+}
+.productContainer img{
+    width:190px;
+    height:150px;
+}
+
+.galleryDiv  {
+    width:500px;
+    height:500px;
+    
+}
+
+#frame{
+    height:100vh;
+}
+
+.categoriesProducts img{
+    border:2px solid black;
+    width:100px;
+    height:100px;
+}
+.categoriesProducts h3{
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    text-align: left;
+}
+.categoriesProducts .row{
+}
+.celebration{
+    align-content: center;
+}
+ #webPortalImage{
+    height:165px;
+    
+} 
